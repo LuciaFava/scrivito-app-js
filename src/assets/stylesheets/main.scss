@@ -1,0 +1,259 @@
+/* Style
+=================================================================== */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.clear {
+  clear: both;
+}
+
+body {
+  font-family: "Proxima Nova RG", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: $theme-greymiddle;
+  background: transparent;
+}
+
+.container,
+.container-fluid {
+  position: relative;
+}
+.container-fluid img {
+  margin: 0;
+}
+
+.container .container {
+  width: auto;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  color: darken($primary, 5%);
+  text-decoration: underline;
+  outline: none!important;
+}
+button:focus { outline: none!important; }
+::selection {
+  color: #fff;
+  background: $secondary;
+}
+::-moz-selection {
+  color: #fff;
+  background: $secondary;
+}
+
+p {
+  margin: 0 0 25px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-weight: 400;
+  color: $theme-greydark;
+  margin: 0 0 15px 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1,
+.h1 {
+  font-size: 60px;
+  line-height: 70px;
+}
+h2,
+.h2 {
+  font-size: 42px;
+  line-height: 50px;
+}
+h3,
+.h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+h4,
+.h4 {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: $theme-greymiddle;
+}
+h5,
+.h5 {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+}
+h6,
+.h6 {
+  font-size: 14px;
+}
+
+.b-bottom {
+  display: block;
+  position: relative;
+  padding: 10px 0 20px 0;
+}
+.b-bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin: 0 0 0 -20px;
+  width: 40px;
+  height: 1px;
+  background: rgba(111, 111, 111, 0.2);
+}
+.bg-greydark .b-bottom:after {
+  background: rgba(111, 111, 111, 0.7);
+}
+.text-left.b-bottom:after {
+  left: 0%;
+  margin: 0;
+}
+.text-right.b-bottom:after {
+  left: auto;
+  right: 0%;
+  margin: 0;
+}
+
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 0 solid #fff;
+  border-bottom: 1px solid #ddd;
+  clear: both;
+  position: relative;
+}
+
+.strong {
+  font-weight: 700;
+}
+ul,
+ol {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+ul {
+  padding-left: 20px;
+}
+
+img,
+.img-fluid {
+  margin: 0 0 25px 0;
+  max-width: 100%;
+}
+.img-fluid.pull-left {
+  margin: 0 15px 25px 0;
+  max-width: 50%;
+}
+.img-fluid.pull-right {
+  margin: 0 0 25px 15px;
+  max-width: 50%;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.margin-top {
+  margin-top: 20px;
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.margin-right {
+  margin-right: 10px;
+}
+.neg-margin {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+mark,
+.mark {
+  background-color: $secondary;
+  color: #fff;
+  padding: 0 0.2em;
+}
+small,
+.small {
+  font-size: 80%;
+  line-height: 1.5em;
+}
+.bg-dark-image .small {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.date,
+.author {
+  font-size: 11px;
+  padding-right: 5px;
+  line-height: 1.5em;
+}
+
+.fa {
+  color: $secondary;
+}
+
+.text-greymiddle {
+  color: $theme-greymiddle;
+}
+
+.hero-bold {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-weight: 700;
+  font-size: 180px;
+  text-transform: uppercase;
+  color: $secondary !important;
+  line-height: 1;
+  margin: 0 0 20px 0;
+}
+.bg-dark-image .hero-bold {
+  color: $secondary !important;
+}
+.hero-small {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 0 40px 0;
+}
+@media (max-width: $screen-sm-max) {
+  .hero-bold {
+    font-size: 80px;
+  }
+}
+
+.logo {
+  /* background: $logo-dark no-repeat center center / contain; height: 50px; */
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.container-initial {
+  position: initial !important;
+}
